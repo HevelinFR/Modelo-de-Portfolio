@@ -1,0 +1,378 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: rgb(225, 225, 225);
+}
+
+.box-login {
+    width: 500px;
+    min-height: 560px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.box-login p:first-child {
+    margin: 0px;
+}
+
+.box-login h2 {
+    font-size: 48px;
+    color: #066a75;
+    padding: 2px 0 10px 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.box-login h2:after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+    background: linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+}
+
+input {
+    outline: none;
+}
+
+
+/*estilo dos input,  menos o checkbox */
+
+.box-login input {
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #b2b2b2;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+
+/*estilo do botão submit */
+
+.box-login input[type="submit"] {
+    width: 95%;
+    cursor: pointer;
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px #333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+
+/*estilo do botão submit no hover */
+
+.box-login input[type="submit"]:hover {
+    background: #4ab3c6;
+}
+
+.box-erro {
+    text-align: center;
+    background: rgb(226, 75, 75);
+    color: white;
+}
+
+
+/* Painel de Controle */
+
+.clear {
+    clear: both;
+}
+
+.center {
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    left: 300px;
+    padding: 9px 0;
+    background: #066a75;
+    width: calc(100% - 300px);
+}
+
+.loggout {
+    float: right;
+}
+
+.loggout a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-btn {
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: #fff;
+}
+
+.menu {
+    overflow-y: auto;
+    float: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #607d8b;
+}
+
+div.box-usuario {
+    text-align: center;
+    padding: 10px;
+}
+
+.avatar-usuario {
+    text-align: left;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #2f3d42;
+}
+
+.avatar-usuario img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.imagem-usuario {
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+}
+
+.imagem-usuario img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.nome-user {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome-user p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.items-menu {
+    margin-top: 30px;
+}
+
+.items-menu h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    background: #2f3d42;
+    color: white;
+    padding: 8px;
+    margin-block-start: 0;
+}
+
+.items-menu a {
+    display: block;
+    padding: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #2f3d42;
+}
+
+
+/* Conteúdo principal do painel */
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 46%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.content {
+    width: calc(100% - 320px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+}
+
+.box-content {
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+    max-width: 90%;
+}
+
+.box-content h2 {
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.box-content i {
+    padding: 0 5px;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+
+/*Box Metricas*/
+
+.box-metricas {
+    margin-top: 16px;
+    padding: 0 15px;
+}
+
+.box-metrica-single {
+    float: left;
+    position: relative;
+    width: 32%;
+    height: 10%;
+    background: #F4B03E;
+    border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2) {
+    background: #E05C4E;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3) {
+    background: #025006;
+}
+
+.box-metrica-wraper {
+    padding: 10px 10px;
+    text-align: left;
+    color: white;
+}
+
+.box-metrica-wraper h2 {
+    font-size: 28px;
+}
+
+.box-metrica-wraper p {
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+
+/* TABELA RESPONSIVA */
+
+.table-responsive {
+    max-width: 1280px;
+    margin: 20px auto;
+}
+
+.table-responsive .row:nth-of-type(1) {
+    font-weight: normal;
+    color: #555;
+    padding: 8px 0;
+    background: #00bfa5;
+    color: white;
+}
+
+.table-responsive .row {
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.col {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .box-metrica-single {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .w50 {
+        width: 100%;
+    }
+    .box-content {
+        max-width: 90%;
+    }
+    .box-metrica-single {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box-metrica-wraper h2 {
+        font-size: 24px;
+    }
+    .box-metrica-wraper p {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    .menu-wraper {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .items-menu a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        left: 0;
+    }
+    header {
+        left: 0;
+        width: 100%;
+    }
+}
