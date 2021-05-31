@@ -14,7 +14,7 @@ if(isset($_GET['loggout'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6e1a7a7c25.js" crossorigin="anonymous"></script>
     <link href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css" rel="stylesheet"/>
-    <title>Document</title>
+    <title>Painel</title>
 </head>
 <body>
     
@@ -40,16 +40,18 @@ if(isset($_GET['loggout'])){
         <div class="items-menu">
 
             <h2>Cadastro</h2>
-            <a href="">Cadastrar Especialidades</a>
-            <a href="">Cadastrar Serviços</a>
+            <a <?php selecionadoMenu('cadastrar-depoimento'); ?> href="">Cadastrar Especialidades</a>
+            <a <?php selecionadoMenu('cadastrar-serviços'); ?> href="">Cadastrar Serviços</a>
+            <a <?php selecionadoMenu('cadastrar-descricao-autor'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>descricao-autor">Descrição do autor</a>
             <h2>Gestão</h2>
-            <a href="">Listar Especialidades</a>
-            <a href="">Listar Serviços</a>
+            <a <?php selecionadoMenu('listar-especialidades'); ?>href="">Listar Especialidades</a>
+            <a <?php selecionadoMenu('listar-servicos'); ?>href="">Listar Serviços</a>
             <h2>Administração do Paienl</h2>
-            <a href="">Editar Usuário</a>
-            <a href="">Adicionar Usuário</a>
+            <a <?php selecionadoMenu('editar-usuario'); ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
+            <a <?php selecionadoMenu('adicionar-usuario'); ?> <?php  verificaPermissaoMenu(2);?>href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
+            <a <?php selecionadoMenu('listar-usuarios'); ?> <?php  verificaPermissaoMenu(2);?>href="<?php echo INCLUDE_PATH_PAINEL ?>listar-usuarios">Listar Usuários</a>
             <h2>Configuração Geral</h2>
-            <a href="">Editar</a>
+            <a <?php selecionadoMenu('editar-site'); ?>href="">Editar Site</a>
             
 
         </div><!--Item-menu-->
@@ -61,7 +63,8 @@ if(isset($_GET['loggout'])){
                    
                 </div>
                 <div class="loggout">
-                <a href="<?php echo INCLUDE_PATH_PAINEL; ?>"><i class="fas fa-home"></i><span>Página Inicial</span></a>
+
+                    <a <?php if(@$_GET['url'] == ""){ ?> style="background: #053c42;padding: 15px;"<?php } ?> href="<?php echo INCLUDE_PATH_PAINEL; ?>"><i class="fas fa-home"></i><span>Página Inicial</span></a>
                     <a href="<?php echo INCLUDE_PATH_PAINEL; ?>?loggout"><i class="fas fa-sign-out-alt"></i><span>Sair </span></a>
 
                 </div><!--loggout-->

@@ -9,18 +9,17 @@
         </div>
     </section> <!--bg-home-->
     <section class="descricao-autor">
-
+        
         <div class="center">
-    
+            <h2>Sobre o Autor</h2>
+            <img class="w50 right" src="<?php echo INCLUDE_PATH; ?>_img/imgex.jpg">
             <div class="w50 left">
-                <h2>Sobre o autor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam auctor magna, nec interdum ante volutpat eu. Vivamus vitae viverra velit. Nullam vulputate nibh lobortis, aliquam eros ut, pulvinar diam. Vestibulum rhoncus lacus non est gravida varius. Pellentesque vitae ultricies leo, ut ultricies sem. Pellentesque nec mi quam. Integer ornare scelerisque mi id venenatis. Maecenas facilisis rhoncus ligula sed ultricies. Pellentesque molestie lectus vel lacus cursus dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque maximus quam purus, in dictum ipsum pellentesque eget. Cras quis eleifend nunc, in tincidunt justo. Fusce euismod dignissim neque eget laoreet. Duis dignissim pulvinar nisi nec placerat. Fusce fringilla ante urna, vel porta risus finibus imperdiet.</p>
-                <p>Sed viverra posuere leo, vitae vestibulum mauris semper id. Duis interdum molestie faucibus. Aenean non lacus a elit facilisis volutpat. Aliquam eu sapien vitae lorem imperdiet condimentum nec eu augue. Phasellus laoreet porta vehicula. Duis a hendrerit ante, at tincidunt felis. Nullam elit erat, sagittis nec sem non, tempor tempor nunc. Curabitur posuere lorem eget eleifend facilisis. Pellentesque nec porta urna, et sollicitudin diam. Donec odio quam, rhoncus et leo nec, aliquet tristique sem. Nulla cursus enim sed arcu luctus fermentum. Morbi rhoncus commodo quam vel suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Quisque tempor ipsum tempor magna congue, vel porta justo convallis. Pellentesque eu maximus ligula.</p>
-            </div> <!--W50-->
-            <div class="w50 left">
-                <div class="center">
-                    <img class="right" src="<?php echo INCLUDE_PATH; ?>_img/imgex.jpg">
-                </div>
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi earum, veniam a corrupti mollitia omnis aspernatur sed? Officia architecto ipsam officiis iure quis veniam, nesciunt nulla, possimus, doloribus in quod.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam, voluptates fuga similique aliquid facilis natus nulla nihil quam cupiditate molestiae esse tenetur, iusto illum atque aspernatur incidunt! Quasi, voluptatum!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim consequatur aut eaque at quidem veniam hic dignissimos eligendi ea placeat sed neque inventore blanditiis laborum atque suscipit, dolorem autem cupiditate!</p>
+
+                </div> <!--W50-->   
             </div>
             <div class="clear"></div>
         </div> <!-- CENTER -->
@@ -32,7 +31,7 @@
             <div class="w33 left box-especialidades">
                 <h3><img src="<?php echo INCLUDE_PATH; ?>_img/css3.png"></h3>
                 <h4>css3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidunt magna, pretium aliquam ligula iaculis vel. Vestibulum faucibus rutrum hendrerit. Mauris aliquet nisl a turpis consectetur pretium. Nullam facilisis, erat quis scelerisque sodales, lectus neque tincidunt metus, sed tristique est odio nec purus.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             </div><!--BOX-ESPECIALIDADES-->
 
             <div class=" w33 left box-especialidades">
@@ -57,17 +56,17 @@
 
                  <div class="w33 left box-servicos">
                     <h3>Criação de sites</h3>
-                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+                    <p> Desenvolovo sites adaptáveis em todos os dispositivos móveis, sites responsivos</p>
                  </div><!--box-servicos-->
 
                  <div class="w33 left box-servicos">
                      <h3>Freelancer Front-end</h3>
-                     <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with</p>
+                     <p>Desebvolvo a programação front-end do seu site ou loja virtual</p>
                  </div>
 
                  <div class="w33 left box-servicos">
                      <h3>Sistemas</h3>
-                     <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+                     <p>Precisa de um sistema para sua empresa? Conte comigo!</p>
                  </div>
              <div class="clear"></div>
 

@@ -23,7 +23,7 @@
                 $_SESSION['online'] = uniqid();
                 $ip = $_SERVER['REMOTE_ADDR'];
                 $token = $_SESSION['online'];
-                $horarioAtual = date('Y-m-d H-i-:s');
+                $horarioAtual = date('Y-m-d H:i:s');
                 $sql = MySql::conectar()->prepare("INSERT INTO `tb_admin_online` VALUES (null,?,?,?)");
                 $sql->execute(array($ip,$horarioAtual,$token));
             }

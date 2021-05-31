@@ -50,7 +50,8 @@ input {
 
 /*estilo dos input,  menos o checkbox */
 
-.box-login input {
+.box-login input[type="text"],
+input[type="password"] {
     width: 95%;
     margin-top: 4px;
     padding: 10px;
@@ -70,6 +71,7 @@ input {
     width: 95%;
     cursor: pointer;
     background: rgb(61, 157, 179);
+    margin-top: 4px;
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;
@@ -92,6 +94,14 @@ input {
     text-align: center;
     background: rgb(226, 75, 75);
     color: white;
+}
+
+
+/* estilio do lembrar senha */
+
+.from-group-login label {
+    font-size: 13px;
+    font-weight: 300;
 }
 
 
@@ -324,6 +334,104 @@ div.box-usuario {
 .col {
     float: left;
     width: 50%;
+}
+
+
+/* EDITAR USUÁRIO */
+
+.box-content form {
+    margin: 30px 0;
+}
+
+.box-content form label {
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+.box-content .from-group {
+    margin: 15px 0;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password] {
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 98%;
+    height: 35px;
+    padding-left: 8px;
+}
+
+.box-content form textarea {
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 98%;
+    height: 200px;
+    padding: 8px;
+    resize: vertical;
+}
+
+.box-content form input[type=file] {
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    width: 98%;
+    padding: 8px;
+}
+
+.box-content form input[type=submit] {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    background: #00bfa5;
+    color: white;
+    border: 0;
+}
+
+.box-content form select {
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 98%;
+    height: 35px;
+    padding-left: 8px;
+}
+
+
+/* BOX DE ALERT AO EDITAR USER */
+
+.box-alert {
+    width: 98%;
+    height: 35px;
+}
+
+.sucesso {
+    color: green;
+}
+
+.erro {
+    color: red;
+}
+
+
+/*  MOSTRA QUAL MENU ESTA SELECIONADO */
+
+.menu-active {
+    background: #3a4b51;
+}
+
+.menu-active::before {
+    content: '>> '
 }
 
 @media screen and (max-width: 1024px) {

@@ -12,13 +12,13 @@
             <div class=" w33 left box-especialidades  box-servicos">
                 <img src="<?php echo INCLUDE_PATH;?>/_img/telefone.png">
                 <h4>Telefone</h4>
-                <p>Você pode ligar para: <br>(75)98833-0119</p>
+                <p>Você pode ligar para: <br>(DD)0000-0000</p>
             </div>
 
             <div class=" w33 left box-especialidades  box-servicos">
                 <img src="<?php echo INCLUDE_PATH;?>/_img/email.png">
                 <h4>Email</h4>
-                <p>Mande nos um email em: hevelinfreitas12@gmail.com</p>
+                <p>Mande nos um email em: emaildaempresa@gmail.com</p>
             </div>
 
             
